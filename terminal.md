@@ -1,0 +1,5 @@
+# terminal tips
+
+## commands
+
+- pwd
