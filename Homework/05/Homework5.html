@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style>
+html,body{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	height:100%;
+	background-color: #ffe6e6;
+}
+h1{
+	font-size: 6vmin;
+}
+h2{
+	font-size: 6vmin;
+}
+h3{
+	font-size: 6vmin;
+}
+
+</style>
+</head>
+<body>
+<h1> "Every day brings a chance for you to draw in a breath, kick off your shoes, and <span style="color:#ff4d4d"><a id="word"></a></span>."</h1>
+
+
+<script>
+var choices = ["dance", 
+			   "run",
+			   "play",
+			   "clap",
+			   "laugh",
+			   "listen",
+			   "sing",
+			   "walk",
+			   "jump",
+			   "kick",
+			   "whistle",
+			   "swim",
+			   "fly",
+			   "sleep",
+			   "spin",
+			   ];
+
+var number = Math.random() * 15;
+var integer = parseInt(number);
+
+document.getElementById("word").innerHTML = choices[integer];
+choices[integer];choices[integer];choices[integer];choices[integer];choices[integer];choices[integer];choices[integer];choices[integer];choices[integer];choices[integer];choices[integer];choices[integer];choices[integer];choices[integer]
+</script>
+</body>
+</html>
