@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TV Channel</title>
+    <style>
+    html,body{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            height:100%;
+            background-color: #ffe6e6;
+    }
+
+        .channel-warpper{
+            text-align: center
+        }
+    </style>
+</head>
+<body onkeydown="changeChannel()">
+    <div class="channel-warpper">
+        <div class="channel">
+            <img id ='image' src="gifs/giphy1.gif" alt="">
+        </div>
+    </div>   
+</body>
+<script>
+    var channel = 0
+    var gifs = ["giphy1.gif",
+                "giphy2.gif",
+                "giphy3.gif",
+                "giphy4.gif",
+                "giphy5.gif",
+                "giphy6.gif",
+                "giphy7.gif",
+                "giphy8.gif",
+                "giphy9.gif",
+                "giphy10.gif",]
+    function changeChannel(){
+            if(channel == 0){
+                channel = 9
+            }
+            else{
+                channel -= 1
+            }
+            document.getElementById('image').src = "gifs/" + gifs[channel]
+        }
+</script>
+
+
+</html>
