@@ -18,6 +18,7 @@
 </head>
 <body onkeydown="changeChannel()">
     <div class="channel-warpper">
+        <h1 class="channel-name"></h1>
         <div class="channel">
             <img id ='image' src="gifs/giphy1.gif" alt="">
         </div>
@@ -37,6 +38,8 @@
                 "giphy9.gif",
                 "giphy10.gif",]
 
+    document.getElementsByClassName('channel-name')[0].innerHTML =
+    'Channel ' + channelIndex
 
     function changeChannel(){
         
@@ -51,6 +54,7 @@
             }
   
             document.getElementById('image').src = "gifs/" + gifs[channelIndex]
+            document.getElementsByClassName('channel-name')[0].innerHTML ='Channel ' + channelIndex
             
         }else if(event.keyCode =='40'){ 
             if(channelIndex <9){
@@ -60,6 +64,7 @@
             }
             
             document.getElementById('image').src = "gifs/" + gifs[channelIndex]
+            document.getElementsByClassName('channel-name')[0].innerHTML ='Channel ' + channelIndex
         }
     }
 </script>
